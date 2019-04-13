@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plexdata Binary Converter</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+        $(document).ready(function () {
+            setCopyright('copyright');
+            showContent('overview-menu', 'overview.html');
+        });
+    </script>
+</head>
+<body>
+
+    <div class="navbar">
+        <a id="overview-menu" href="#" onclick="showContent(this, 'overview.html');">Overview</a>
+        <a id="licensing-menu" href="#" onclick="showContent(this, 'licensing.html');">Licensing</a>
+        <a id="installation-menu" href="#" onclick="showContent(this, 'installation.html');">Installation</a>
+        <a id="examples-menu" href="#" onclick="showContent(this, 'examples.html');">Examples</a>
+        <a id="examples-sub-menu-1" class="navsub" href="#" onclick="showContent(this, 'examples.html', 'examples-sub-section-1');">Section One</a>
+        <a id="examples-sub-menu-2" class="navsub" href="#" onclick="showContent(this, 'examples.html', 'examples-sub-section-2');">Section Two</a>
+        <a id="examples-sub-menu-3" class="navsub" href="#" onclick="showContent(this, 'examples.html', 'examples-sub-section-3');">Section Three</a>
+        <a id="limitations-menu" href="#" onclick="showContent(this, 'limitations.html');">Limitations</a>
+    </div>
+
+    <div class="header">
+        <h1>Place Page Title Here</h1>
+    </div>
+
+    <div id="content" class="content"></div>
+
+    <div id="copyright" class="copyright footer" />
+
+</body>
+</html>

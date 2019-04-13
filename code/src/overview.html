@@ -1,0 +1,65 @@
+
+<h2 id="overview">Overview</h2>
+
+<p>
+    Write an introduction and put it right here. As next follow the steps below
+    to add and configure your additional pages. Finally, write content of each
+    page and link them to the navigation bar.
+</p>
+
+
+<h3>Add New Page</h3>
+
+<p>
+    As first, create a new HTML page and add it to the project. Thereafter, insert a
+    link to the new page into the navigation bar. See code snippet below how to do it.
+</p>
+
+<h3>Add Page Link</h3>
+
+<p>
+    Below an example of how to add a link to the navigation bar. The navigation bar can
+    be found in page <code>index.html</code>.
+</p>
+
+<pre><code>&lt;a id="menu-item-id" href="#" onclick="showContent(this, 'menu-item-page-name.html');"&gt;Menu Text&lt;/a&gt;</code></pre>
+
+<h3>Section Referencing</h3>
+
+<p>
+    It is possible to link sub-sections into the navigation bar. For this purpose just
+    add a page and configure it as shown below.
+</p>
+
+<p><b>Provide Headings</b></p>
+
+<p>
+    Write your page content, which might look like shown below.
+</p>
+
+<pre><code>&lt;h2&gt;Sub-Page Title&lt;/h2&gt;
+&lt;p&gt;The introduction text of this page.&lt;/p&gt;
+
+&lt;h3 id="sub-section-id"&gt;Sub-Section Title&lt;/h3&gt;
+&lt;p&gt;Note that the 'sub-section-id' is important for linking this section into the navigation bar.&lt;/p&gt;
+</code></pre>
+
+<p>
+    Repeat adding of sub-section as long as required.
+</p>
+
+<p><b>Navigation Linkage</b></p>
+
+<p>
+    Open page <code>index.html</code> and move to the navigation bar.
+</p>
+
+<pre><code>&lt;a id="menu-item-id" href="#" onclick="showContent(this, 'menu-item-page-name.html');"&gt;Menu Text&lt;/a&gt;
+&lt;a id="sub-menu-item-id" class="navsub" href="#" onclick="showContent(this, 'menu-item-page-name.html', 'sub-section-id');"&gt;Sub-Menu Text&lt;/a&gt;
+&lt;a id="sub-menu-item-id" class="navsub" href="#" onclick="showContent(this, 'menu-item-page-name.html', 'sub-section-id');"&gt;Sub-Menu Text&lt;/a&gt;
+&lt;a id="sub-menu-item-id" class="navsub" href="#" onclick="showContent(this, 'menu-item-page-name.html', 'sub-section-id');"&gt;Sub-Menu Text&lt;/a&gt;</code></pre>
+
+<p>
+    Save all and test it in the browser. Done.
+</p>
+
