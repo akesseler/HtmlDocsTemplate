@@ -1,12 +1,11 @@
-# Plexdata.CsvParser
+# HtmlDocsTemplate
 
-_Provide a short description right here..._
+The template project for any HTML documentation.
 
 ## Limitations
 
-_TBD, if some_...
+None at the moment.
 
 ## Known Issues
 
-_TBD, if some_...
-
+None at the moment.
