@@ -1,6 +1,6 @@
 # HtmlDocsTemplate
 
-The template project for any HTML documentation.
+The template project for any HTML documentation. See the result under [https://akesseler.github.io/HtmlDocsTemplate/](https://akesseler.github.io/HtmlDocsTemplate/)
 
 ## Limitations
 
