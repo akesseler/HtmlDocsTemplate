@@ -3,13 +3,11 @@ function setCopyright(selector) {
 
     if (selector) {
 
-        selector = '#' + selector;
-
         let date = new Date();
         let year = date.getFullYear();
         let text = 'Copyright&nbsp;&copy;&nbsp;' + year + '&nbsp;<a href="http://www.plexdata.de" target="_blank">plexdata.de</a>';
 
-        $(selector).html(text);
+        $(makeSelector(selector)).html(text);
     }
 }
 
@@ -35,7 +33,7 @@ function selectCaller(caller) {
 
         try {
 
-            let parent = $(caller).parent();
+            let parent = $(makeSelector('navigation'));
 
             if (parent) {
 
@@ -51,7 +49,6 @@ function selectCaller(caller) {
             }
         }
         catch (error) {
-
             console.log(error);
         }
     }
@@ -84,7 +81,6 @@ function showContent(caller, chapter, section) {
             });
         }
         catch (error) {
-            debugger;
             console.log(error);
         }
     }

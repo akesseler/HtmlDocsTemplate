@@ -7,7 +7,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 150pt;
+    width: 180pt;
     height: calc(100vh - 20pt);
     z-index: 1;
     overflow-x: hidden;
@@ -26,6 +26,7 @@ body {
 
 .navbar a:hover {
     color: #F1F1F1;
+    text-decoration: none;
 }
 
 .navbar .navsub {
@@ -44,26 +45,28 @@ body {
     position: fixed;
     padding: 5pt;
     top: 0pt;
-    left: 150pt;
-    width: calc(100vw - 160pt);
+    left: 180pt;
+    width: calc(100vw - 190pt);
     height: 50pt;
     align-items: center;
     justify-content: center;
-    border-bottom: solid #E0E0E0 1pt;
+    background-color: #FCFCFC;
+    border-bottom: 1pt solid #C4C4C4;
 }
 
 .footer {
     display: -webkit-flex;
     display: flex;
     position: fixed;
-    padding: 5pt;
+    padding: 3pt 5pt 7pt 5pt;
     top: calc(100vh - 25pt);
-    left: 150pt;
-    width: calc(100vw - 160pt);
+    left: 180pt;
+    width: calc(100vw - 190pt);
     height: 15pt;
     align-items: center;
     font-size: 0.75em;
-    background-image: linear-gradient(#E0E0E0, #FFFFFF, #FFFFFF);
+    background-color: #FCFCFC;
+    border-top: 1pt solid #C4C4C4;
 }
 
 .footer a {
@@ -81,9 +84,10 @@ body {
     position: fixed;
     padding: 0pt 20pt 20pt 20pt;
     margin-top: 1pt;
+    margin-bottom: 1pt;
     top: 60pt;
-    left: 150pt;
-    width: calc(100vw - 190pt);
+    left: 180pt;
+    width: calc(100vw - 220pt);
     height: calc(100vh - 105pt);
     display: block;
     overflow-x: hidden;
@@ -92,15 +96,10 @@ body {
 
 .copyright a {
     color: inherit;
-    text-decoration: none;
-}
-
-.copyright a:hover {
-    text-decoration: underline;
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2.25em;
     font-weight: bold;
     font-style: inherit;
 }
@@ -115,6 +114,14 @@ h3 {
     font-size: 1.25em;
     font-weight: bold;
     font-style: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 code {
