@@ -52,6 +52,8 @@ function selectCaller(caller) {
             console.log(error);
         }
     }
+
+    return false;
 }
 
 function showContent(caller, chapter, section) {
@@ -73,9 +75,8 @@ function showContent(caller, chapter, section) {
 
                 if (section) {
 
-                    section = makeSelector(section);
+                    let offset = $(makeSelector(section)).offset().top - $(target).offset().top;
 
-                    let offset = $(section).offset().top - $(target).offset().top;
                     $(target).scrollTop(offset);
                 }
             });
@@ -87,3 +88,35 @@ function showContent(caller, chapter, section) {
 
     return false;
 }
+
+function onScrollContent() {
+
+    let content = $(makeSelector('content'));
+    let button = $('.jump-top-button');
+
+    if (content && button) {
+
+        if ($(content).scrollTop() > 20) {
+
+            $(button).show();
+
+        } else {
+
+            $(button).hide();
+        }
+    }
+
+    return false;
+}
+
+function onJumpTop() {
+
+    let content = $(makeSelector('content'));
+
+    if (content) {
+        $(content).scrollTop(0);
+    }
+
+    return false;
+}
+
