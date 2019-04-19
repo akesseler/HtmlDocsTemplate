@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 
@@ -23,14 +23,14 @@
 <body>
 
     <div id="navigation" class="navbar">
-        <a id="overview" href="#" onclick="showContent(this, 'overview.html');">Overview</a>
-        <a id="licensing" href="#" onclick="showContent(this, 'licensing.html');">Licensing</a>
-        <a id="installation" href="#" onclick="showContent(this, 'installation.html');">Installation</a>
-        <a id="examples" href="#" onclick="showContent(this, 'examples.html');">Examples</a>
-        <a id="examples-sub-1" class="navsub" href="#" onclick="showContent(this, 'examples.html', 'examples-sub-section-1');">Section One</a>
-        <a id="examples-sub-2" class="navsub" href="#" onclick="showContent(this, 'examples.html', 'examples-sub-section-2');">Section Two</a>
-        <a id="examples-sub-3" class="navsub" href="#" onclick="showContent(this, 'examples.html', 'examples-sub-section-3');">Section Three</a>
-        <a id="limitations" href="#" onclick="showContent(this, 'limitations.html');">Limitations</a>
+        <a id="overview" href="#" onclick="showContent(this, 'overview.html');return false;">Overview</a>
+        <a id="licensing" href="#" onclick="showContent(this, 'licensing.html');return false;">Licensing</a>
+        <a id="installation" href="#" onclick="showContent(this, 'installation.html');return false;">Installation</a>
+        <a id="examples" href="#" onclick="showContent(this, 'examples.html');return false;">Examples</a>
+        <a id="examples-sub-1" class="navsub" href="#" onclick="showContent(this, 'examples.html', 'examples-sub-section-1');return false;">Section One</a>
+        <a id="examples-sub-2" class="navsub" href="#" onclick="showContent(this, 'examples.html', 'examples-sub-section-2');return false;">Section Two</a>
+        <a id="examples-sub-3" class="navsub" href="#" onclick="showContent(this, 'examples.html', 'examples-sub-section-3');return false;">Section Three</a>
+        <a id="limitations" href="#" onclick="showContent(this, 'limitations.html');return false;">Limitations</a>
     </div>
 
     <div class="header">
@@ -39,12 +39,12 @@
 
     <div id="ground">
         <div id="content" class="content" onscroll="onScrollContent();"></div>
-        <button class="jump-top-button" onclick="onJumpTop();">
+        <button class="jump-top-button" onclick="onJumpTop();return false;">
             <i class="fa fa-chevron-up"></i>
         </button>
     </div>
 
-    <div id="copyright" class="copyright footer" />
+    <div id="copyright" class="copyright footer"></div>
 
 </body>
 </html>

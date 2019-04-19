@@ -120,3 +120,19 @@ function onJumpTop() {
     return false;
 }
 
+function copyToClipboard(selector) {
+
+    try {
+
+        var $temp = $("<textarea>");
+        $("body").append($temp);
+        $temp.val($(makeSelector(selector)).text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+    }
+    catch (error) {
+        console.log(error);
+    }
+
+    return false;
+}

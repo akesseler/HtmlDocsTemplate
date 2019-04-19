@@ -22,16 +22,18 @@
     be found in page <code>index.html</code>.
 </p>
 
-<pre><code>&lt;a id="menu-item-id" href="#" onclick="showContent(this, 'menu-item-page-name.html');"&gt;Menu Text&lt;/a&gt;</code></pre>
+<div class="copy-code-snippet-text"><a href="#" onclick="copyToClipboard('add-page-link-example');return false;">Copy</a></div>
+<pre id="add-page-link-example"><code>&lt;a id="menu-item-id" href="#" onclick="showContent(this, 'menu-item-page-name.html');return false;"&gt;Menu Text&lt;/a&gt;</code></pre>
 
 <h3>Chapter Referencing</h3>
 
 <p>
-    Referencing other chapters, like <a id="licensing" href="#" onclick="showContent('licensing', 'licensing.html');">Licensing</a>, 
+    Referencing other chapters, like <a id="licensing" href="#" onclick="showContent('licensing', 'licensing.html');return false;">Licensing</a>, 
     can be accomplished by putting a link into the text as shown below.
 </p>
 
-<pre><code>&lt;a id="licensing" href="#" onclick="showContent('licensing', 'licensing.html');"&gt;Licensing&lt;/a&gt;</code></pre>
+<div class="copy-code-snippet-text"><a href="#" onclick="copyToClipboard('chapter-referencing-example');return false;">Copy</a></div>
+<pre id="chapter-referencing-example"><code>&lt;a id="licensing" href="#" onclick="showContent('licensing', 'licensing.html');return false;"&gt;Licensing&lt;/a&gt;</code></pre>
 
 <h3>Section Referencing</h3>
 
@@ -46,7 +48,8 @@
     Write your page content, which might look like shown below.
 </p>
 
-<pre><code>&lt;h2&gt;Sub-Page Title&lt;/h2&gt;
+<div class="copy-code-snippet-text"><a href="#" onclick="copyToClipboard('provide-headings-example');return false;">Copy</a></div>
+<pre id="provide-headings-example"><code>&lt;h2&gt;Sub-Page Title&lt;/h2&gt;
 &lt;p&gt;The introduction text of this page.&lt;/p&gt;
 
 &lt;h3 id="sub-section-id"&gt;Sub-Section Title&lt;/h3&gt;
@@ -63,10 +66,11 @@
     Open page <code>index.html</code> and move to the navigation bar.
 </p>
 
-<pre><code>&lt;a id="menu-item-id" href="#" onclick="showContent(this, 'menu-item-page-name.html');"&gt;Menu Text&lt;/a&gt;
-&lt;a id="sub-menu-item-id" class="navsub" href="#" onclick="showContent(this, 'menu-item-page-name.html', 'sub-section-id');"&gt;Sub-Menu Text&lt;/a&gt;
-&lt;a id="sub-menu-item-id" class="navsub" href="#" onclick="showContent(this, 'menu-item-page-name.html', 'sub-section-id');"&gt;Sub-Menu Text&lt;/a&gt;
-&lt;a id="sub-menu-item-id" class="navsub" href="#" onclick="showContent(this, 'menu-item-page-name.html', 'sub-section-id');"&gt;Sub-Menu Text&lt;/a&gt;</code></pre>
+<div class="copy-code-snippet-text"><a href="#" onclick="copyToClipboard('navigation-linkage-example');return false;">Copy</a></div>
+<pre id="navigation-linkage-example"><code>&lt;a id="menu-item-id" href="#" onclick="showContent(this, 'menu-item-page-name.html');return false;"&gt;Menu Text&lt;/a&gt;
+&lt;a id="sub-menu-item-id" class="navsub" href="#" onclick="showContent(this, 'menu-item-page-name.html', 'sub-section-id');return false;"&gt;Sub-Menu Text&lt;/a&gt;
+&lt;a id="sub-menu-item-id" class="navsub" href="#" onclick="showContent(this, 'menu-item-page-name.html', 'sub-section-id');return false;"&gt;Sub-Menu Text&lt;/a&gt;
+&lt;a id="sub-menu-item-id" class="navsub" href="#" onclick="showContent(this, 'menu-item-page-name.html', 'sub-section-id');return false;"&gt;Sub-Menu Text&lt;/a&gt;</code></pre>
 
 <p>
     Save all and test it in the browser. Done.
