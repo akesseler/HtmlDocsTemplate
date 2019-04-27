@@ -18,26 +18,28 @@ body {
 }
 
 .navbar a {
-    padding: 6pt 8pt 6pt 16pt;
+    padding: 2pt 8pt 2pt 15pt;
     text-decoration: none;
-    font-size: 1.4em;
-    color: #818181;
+    font-size: 1.25em;
+    color: #C4C4C4;
     display: block;
 }
 
 .navbar a:hover {
-    color: #F1F1F1;
+    color: #262626;
+    background-color: #FFFFFF;
     text-decoration: none;
 }
 
 .navbar .navsub {
-    font-size: 1.2em;
-    margin-top: -8pt;
-    margin-left: 0.6em;
+    font-size: 1.0em;
+    padding: 2pt 8pt 2pt 30pt;
 }
 
 .navbar .selected {
-    color: #D1D1D1;
+    cursor: default;
+    color: #FFFFFF;
+    background-color: #424242;
 }
 
 .header {
@@ -59,7 +61,7 @@ body {
     display: -webkit-flex;
     display: flex;
     position: fixed;
-    padding: 3pt 5pt 7pt 5pt;
+    padding: 4pt 5pt 6pt 5pt;
     top: calc(100vh - 25pt);
     left: 180pt;
     width: calc(100vw - 190pt);
@@ -80,8 +82,6 @@ body {
 }
 
 .content {
-    display: -webkit-flex;
-    display: flex;
     position: fixed;
     padding: 0pt 20pt 20pt 20pt;
     margin-top: 1pt;
@@ -231,7 +231,6 @@ ul.page-toc:before {
 }
 
 .copy-code-snippet-text a {
-    text-decoration: none;
     padding: 0pt 3pt;
     font-size: 0.9em;
     font-style: normal !important;
@@ -242,4 +241,8 @@ ul.page-toc:before {
 
 .copy-code-snippet-text a:hover {
     text-decoration: underline;
+}
+
+.center {
+    text-align: center;
 }
