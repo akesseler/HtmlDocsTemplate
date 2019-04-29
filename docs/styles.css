@@ -124,6 +124,13 @@ h4 {
     margin-bottom: -0.5em;
 }
 
+h5 {
+    font-size: 1em;
+    font-weight: bold;
+    font-style: initial;
+    margin-bottom: -0.5em;
+}
+
 a {
     text-decoration: none;
 }
@@ -197,6 +204,12 @@ ul.page-toc:before {
     text-decoration: underline;
 }
 
+ul.page-sub-toc {
+    padding: 0pt;
+    margin-left: 1em;
+    list-style: none;
+}
+
 .jump-top-button {
     display: none;
     position: fixed;
@@ -246,3 +259,14 @@ ul.page-toc:before {
 .center {
     text-align: center;
 }
+
+.image {
+    padding: 0pt;
+    overflow: auto;
+}
+
+.label {
+    display: block;
+    font-size: 0.8em;
+}
+
