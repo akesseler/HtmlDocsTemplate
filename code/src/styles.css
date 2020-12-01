@@ -143,11 +143,16 @@ code {
     font-family: "Consolas", monospace;
 }
 
+samp {
+    font-family: "Consolas", monospace;
+    white-space: pre-wrap;
+}
+
 pre {
     padding: 10pt;
     margin: 0pt;
     margin-top: 2em;
-    font-size: 0.7em;
+    font-size: 0.75em;
     background-color: #FCFCFC;
     border: 1pt solid #C4C4C4;
     overflow-x: auto;
